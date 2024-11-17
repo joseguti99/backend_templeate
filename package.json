@@ -1,0 +1,28 @@
+{
+  "name": "node_express_templeate",
+  "version": "1.0.0",
+  "description": "express-server-app",
+  "main": "index.js",
+  "type": "module",
+  "node_version": "22.11.0",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "node --no-warnings --loader ts-node/esm src/index.ts",
+    "build": "tsc -p config/tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "reflect-metadata": "^0.2.2"
+  }
+}
